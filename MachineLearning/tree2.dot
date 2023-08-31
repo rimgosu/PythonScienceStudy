@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="odor_n <= 0.5\nsamples = 5686\nvalue = [2956, 2730]\nclass = 독", fillcolor="#fdf5f0"] ;
+1 [label="stalk-root_c <= 0.5\nsamples = 3214\nvalue = [572, 2642]\nclass = 식용", fillcolor="#64b2eb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="stalk-root_r <= 0.5\nsamples = 2819\nvalue = [203, 2616]\nclass = 식용", fillcolor="#48a5e7"] ;
+1 -> 2 ;
+3 [label="samples = 2686\nvalue = [70, 2616]\nclass = 식용", fillcolor="#3ea0e6"] ;
+2 -> 3 ;
+4 [label="samples = 133\nvalue = [133, 0]\nclass = 독", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="stalk-surface-above-ring_s <= 0.5\nsamples = 395\nvalue = [369, 26]\nclass = 독", fillcolor="#e78a47"] ;
+1 -> 5 ;
+6 [label="samples = 26\nvalue = [0, 26]\nclass = 식용", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="samples = 369\nvalue = [369, 0]\nclass = 독", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="spore-print-color_r <= 0.5\nsamples = 2472\nvalue = [2384, 88]\nclass = 독", fillcolor="#e68640"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="stalk-surface-below-ring_y <= 0.5\nsamples = 2418\nvalue = [2384, 34]\nclass = 독", fillcolor="#e5833c"] ;
+8 -> 9 ;
+10 [label="samples = 2378\nvalue = [2372, 6]\nclass = 독", fillcolor="#e5813a"] ;
+9 -> 10 ;
+11 [label="samples = 40\nvalue = [12, 28]\nclass = 식용", fillcolor="#8ec7f0"] ;
+9 -> 11 ;
+12 [label="samples = 54\nvalue = [0, 54]\nclass = 식용", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
