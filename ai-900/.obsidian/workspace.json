@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "35b9a2eb26472517",
+        "id": "920e11d16fcc8ae9",
         "type": "tabs",
         "children": [
           {
-            "id": "878494cf5d2ff6d5",
+            "id": "a90da9dcd3a19fea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai-900 용어 사전.md",
+                "file": "오답노트.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ai-900 용어 사전.md",
+                "file": "오답노트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ai-900 용어 사전.md",
+                "file": "오답노트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ai-900 용어 사전.md"
+                "file": "오답노트.md"
               }
             }
           }
@@ -146,8 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "878494cf5d2ff6d5",
+  "active": "a90da9dcd3a19fea",
   "lastOpenFiles": [
-    "ai-900 용어 사전.md"
+    "Pasted image 20240205112645.png",
+    "ai-900 용어 사전.md",
+    "오답노트.md",
+    "스크린샷 2024-02-05 093626.png",
+    "스크린샷 2024-02-05 093948.png",
+    "스크린샷 2024-02-05 093406.png",
+    "스크린샷 2024-02-05 093348.png",
+    "Pasted image 20240205111458.png",
+    "스크린샷 2024-02-05 110727.png",
+    "스크린샷 2024-02-05 100735.png",
+    "스크린샷 2024-02-05 100955.png",
+    "스크린샷 2024-02-05 101209.png",
+    "스크린샷 2024-02-05 101538.png"
   ]
 }
