@@ -1,6 +1,10 @@
+import time
 import requests
 import os
 from tqdm import tqdm
+
+# 시간 측정 시작
+start_time = time.time()
 
 url = "https://api.openai.com/v1/audio/speech"
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
@@ -22,3 +26,11 @@ for voice in tqdm(voices, desc="Generating Speech Files"):
 
     with open(f'voices/{voice}_speech.mp3', 'wb') as f:
         f.write(response.content)
+
+# 시간 측정 종료
+end_time = time.time()
+
+# 전체 실행 시간 계산 (초 단위)
+total_time = end_time - start_time
+
+print(f"작업을 완료하는 데 걸린 시간: {total_time}초")
