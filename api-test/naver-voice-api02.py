@@ -13,7 +13,7 @@ voice_lst = [
 'vgoeun', 'vdaeseong', 'ngyeongjun', 'ndaeseong', 'njonghyeok'
 ]
 
-def make_mp3(voice, message, speed=5, pitch=5, alpha=5):
+def make_mp3(voice, message, speed=0, pitch=0, alpha=0):
     client_id = os.getenv('NAVER_CLIENT_ID')
     client_secret = os.getenv('NAVER_CLIENT_SECRET')
     encText = urllib.parse.quote(message)
@@ -27,7 +27,7 @@ def make_mp3(voice, message, speed=5, pitch=5, alpha=5):
     if(rescode==200):
         print(f"{voice} TTS mp3 저장")
         response_body = response.read()
-        with open(f'./24-02-20/{voice}.mp3', 'wb') as f:
+        with open(f'./2402200440/{voice}.mp3', 'wb') as f:
             f.write(response_body)
     else:
         print("Error Code:" + rescode)
