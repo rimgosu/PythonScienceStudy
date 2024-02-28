@@ -92,52 +92,20 @@ def make_gif(text):
     client_id = '9pqbfiis28'
     client_secret = '5mcrIscYBSnTHudeCgDJ1wUKUcXu5Hq0dgPHZNms'
     encText = urllib.parse.quote(text)
-    data = "speaker=nmammon&volume=0&speed=0&pitch=0&format=mp3&text=" + encText
+    data = "speaker=nhajun&volume=0&speed=0&pitch=0&format=mp3&text=" + encText
     url = "https://naveropenapi.apigw.ntruss.com/tts-premium/v1/tts"
     request = urllib.request.Request(url)
-    request.add_header("X-NCP-APIGW-API-KEY-ID", client_id)
-    request.add_header("X-NCP-APIGW-API-KEY", client_secret)
+    request.add_header("X-NCP-APIGW-API-KEY-ID",client_id)
+    request.add_header("X-NCP-APIGW-API-KEY",client_secret)
     response = urllib.request.urlopen(request, data=data.encode('utf-8'))
     rescode = response.getcode()
-    if(rescode == 200):
+    if(rescode==200):
         print("TTS mp3 저장")
         response_body = response.read()
-        # 파일 이름에서 물음표를 공백으로 대체
-        safe_filename = text.replace('?', ' ')
-        with open(f'{safe_filename}.mp3', 'wb') as f:
+        with open(f'{text}.mp3', 'wb') as f:
             f.write(response_body)
     else:
         print("Error Code:" + rescode)
 
-text = '앞으로도 재밌게 놀아보자!'
+text = '숨바꼭질보다 춤이라니 진짜 재밌겠다! 어떤춤을 추고 싶어! 나는 힙합 좋아해'
 make_gif(text)
-
-
-"""
-이것으로 그리닷의 소개를 마치도록 하지.
-그리닷은 아이에게 무한한 재미를 줄 거야.
-앞으로도 재밌게 놀아보자!
-"""
-
-"""
-이젠 생성형 AI를 이용해서 아이 그림을 업그레이드 시켜볼거야.
-어떤 스타일로 업그레이드할 지만 정하면 돼
-잠시 기다리고 네개의 그림중 원하는 걸 고르면 돼.
-원하는 그림을 정해줘.
-대단하군! 벌써 업그레이드 된 친구가 나왔어.
-생성된 김에 인사나 해보지
-안녕. 반갑군
-"""
-
-"""
-아주 훌륭하군!
-이제 나 마몬이 설명하겠다.
-아이가 친구와 대화를 하면 기록이 남을 것이고,
-부모들은 대화 내용이 궁금하겠지?
-리포트 보기 버튼을 눌러 아이의 대화 기록을 살펴보도록 하지.
-잠시 기다리면 아이의 감정 상태 분류를 볼 수 있고
-각각 클릭하면 더 자세한 정보를 볼 수 있지
-밑으로 내리면 전체 대화 내용과 
-하루 대화 요약을 받아볼 수 있어
-아이 정서 파악에 도움이 되겠군!
-"""
